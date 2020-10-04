@@ -1,0 +1,34 @@
+@import '../general/variables';
+@import '../general/reset';
+@import '../general/global';
+
+.Header {
+    display: flex;
+    background: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 9rem;
+
+    &__logo {
+        max-width: 25rem;
+    }
+
+    &__nav {
+        &-item {
+
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        a {
+            color: $light-color;
+            text-decoration: none;
+
+            &:hover {
+                border-bottom: 1px solid $light-color;
+            }
+        }
+    }
+
+}
